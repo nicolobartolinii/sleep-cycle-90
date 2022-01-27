@@ -32,6 +32,10 @@ function plusHours(hour, minute, times) {
     if (hour > 23) {
       hour -= 24;
     }
+    if (minute === 0)
+      minute = "00";
+    else if (minute < 10)
+      minute = "0".concat(minute);
     return `${hour}:${minute === 0 ? "00" : minute}`;
   } else if (times <= 0) return "ERRORE";
   else {
@@ -46,7 +50,11 @@ function plusHours(hour, minute, times) {
         hour -= 24;
       }
     }
-    return `${hour}:${minute === 0 ? "00" : minute}`;
+    if (minute === 0)
+      minute = "00";
+    else if (minute < 10)
+      minute = "0".concat(minute);
+    return `${hour}:${minute}`;
   }
 }
 
