@@ -1,4 +1,5 @@
 function getTime() {
+  const content = document.querySelector(".content");
   const ris = document.querySelector(".ris");
   clearRis(ris);
   let timeInput;
