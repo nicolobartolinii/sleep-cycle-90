@@ -3,8 +3,10 @@
 
 body {
     font-family: "Poppins", "Roboto", sans-serif;
-    background: rgb(132,206,235);
-    background: radial-gradient(circle, rgba(132,206,235,1) 59%, rgba(193,200,228,1) 100%);
+    background: rgb(36,37,130);
+background: linear-gradient(45deg, rgba(36,37,130,1) 0%, rgba(85,61,103,1) 22%, rgba(246,76,114,1) 49%, rgba(153,115,142,1) 80%, rgba(47,47,224,1) 100%);
+    /* background: rgb(132,206,235);
+    background: radial-gradient(circle, rgba(132,206,235,1) 59%, rgba(193,200,228,1) 100%); */
     margin: 0;
     height: 100vh;
     display: flex;
@@ -19,9 +21,18 @@ body {
 }
 
 .footer {
+    color: white;
     text-align: center;
-    background-color: #687864;
+    background-color: #331f6b;
     padding: 12px;
+}
+
+.footer a {
+    color:white;
+    text-decoration: none;
+}
+.footer a:visited {
+    color:white;
 }
 
 .content-box {
@@ -33,33 +44,41 @@ body {
 
 .content {
     margin: 0 40%;
-    background: rgb(136,96,208);
-    background: linear-gradient(45deg, rgba(136,96,208,1) 0%, rgba(90,185,234,1) 100%);
+    background: rgb(246,76,114);
+background: linear-gradient(48deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 100%);
+    /* background: rgb(136,96,208);
+    background: linear-gradient(45deg, rgba(136,96,208,1) 0%, rgba(90,185,234,1) 100%); */
     text-align: center;
     border-radius: 2em;
     padding: 15px;
-    box-shadow: 10px 10px 40px #182628;
+    box-shadow: 10px 10px 10px rgba(78, 24, 35, 0.5);
 }
 
 .content input {
     /* margin: 0 auto; */
-    background-color: #5680e9;
+    background: rgb(246,76,114);
+background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 100%);
     border: none;
     padding: 0.5rem;
     border-radius: 10em;
+    box-shadow: inset 2px 2px 2px #431c445b;
 }
 
 .content input:focus {
     outline: none;
-    background-color: #4a77e9;
+    background-color: #331f6b;
 }
 
 #btn {
-    background-color: #5680e9;
+background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 100%);
     border: none;
     border-radius: 0.8em;
     padding: 0.5rem;
-    outline: #182628;
+    box-shadow: inset 2px 2px 2px #431c445b;
+}
+
+#btn:hover {
+    box-shadow: inset 2px 2px 12px #431c445b;
 }
 
 .inpBtn {
