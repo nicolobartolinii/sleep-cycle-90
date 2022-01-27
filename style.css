@@ -69,6 +69,11 @@ background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 10
     background-color: #331f6b;
 }
 
+.content input:hover {
+    box-shadow: inset 2px 2px 12px #431c445b;
+    transition: box-shadow 0.20s;
+}
+
 #btn {
 background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 100%);
     border: none;
@@ -79,6 +84,12 @@ background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 10
 
 #btn:hover {
     box-shadow: inset 2px 2px 12px #431c445b;
+    transition: box-shadow 0.20s;
+}
+
+#btn:active {
+    background: linear-gradient(45deg, rgb(255, 42, 88) 0%, rgb(255, 77, 116) 100%);
+    box-shadow: inset 2px 2px 12px #431c445b;
 }
 
 .inpBtn {
@@ -86,4 +97,5 @@ background: linear-gradient(45deg, rgba(246,76,114,1) 0%, rgba(255,130,158,1) 10
     justify-content: center;
     align-items: center;
     gap: 6px;
+    margin-top: 0.6em;
 }
